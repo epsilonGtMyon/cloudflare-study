@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/common/style.css" />
+    <script
+      type="module"
+      src="./assets/pages/sql-error-advisor/script.js"
+    ></script>
+    <style>
+      textarea {
+        width: 90%;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <div>原因SQL：</div>
+        <textarea id="causeSql" style="height: 200px"></textarea>
+      </div>
+
+      <div>
+        <div>エラーメッセージ：</div>
+        <textarea id="errorMessage" style="height: 100px"></textarea>
+      </div>
+    </div>
+
+    <div>
+      <button id="execute1Button">問い合わせ1(フロントで加工)</button>
+      <button id="execute2Button">問い合わせ2(サーバーで加工)</button>
+    </div>
+
+    <div>
+        <div>AIの回答</div>
+      <textarea id="aiAnswer" style="height: 200px"> </textarea>
+    </div>
+  </body>
+</html>
