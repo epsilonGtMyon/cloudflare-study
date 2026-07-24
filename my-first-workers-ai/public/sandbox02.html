@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="./assets/common/style.css" />
+		<script type="module" src="./assets/pages/sandbox02/script.js"></script>
+		<style>
+			textarea {
+				width: 500px;
+				height: 200px;
+				overflow-y: scroll;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>文字から画像生成</h1>
+
+			<div>
+				<label>
+					<div>インプット：</div>
+					<textarea id="userInput"></textarea>
+				</label>
+			</div>
+
+			<div>
+        <label>サイズ</label>
+        <select id="imageSize">
+          <option value="0">指定なし</option>
+          <option value="1">256x256</option>
+          <option value="2">512x512</option>
+          <option value="3">1024x1024</option>
+        </select>
+
+      </div>
+
+			<div>
+				<button id="executeButton">Execute</button>
+			</div>
+		</div>
+
+		<div id="result"></div>
+	</body>
+</html>

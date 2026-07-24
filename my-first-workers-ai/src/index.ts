@@ -12,6 +12,7 @@
  */
 
 import { handleSandbox01 } from "./sandbox01";
+import { handleSandbox02 } from "./sandbox02";
 import {
   handleSqlErrorAdvisor,
   handleSqlErrorAdvisor2,
@@ -31,6 +32,9 @@ export default {
     switch (url.pathname) {
       case "/api/sandbox01/helloAi": {
         return handleSandbox01(request, env, ctx);
+      }
+      case "/api/sandbox02/generateImage": {
+        return handleSandbox02(request, env, ctx);
       }
       case "/api/ai/sql-error-advisor": {
         return handleSqlErrorAdvisor(request, env, ctx);
