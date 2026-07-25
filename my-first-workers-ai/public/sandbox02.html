@@ -3,7 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Sandbox02</title>
+
+		<meta name="og:url" content="https://my-first-workers-ai.epsilongtmyon.workers.dev/sandbox02" />
+		<meta name="og:type" content="website" />
+		<meta name="og:title" content="Sandbox02" />
+		<meta name="og:image" content="/assets/image/textToImage.jpg" />
+		<meta name="og:description" content="文字列から画像を生成するサイト" />
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Sandbox02" />
+		<meta name="twitter:image" content="/assets/image/textToImage.jpg" />
+		<meta name="twitter:description" content="文字列から画像を生成するサイト" />
 
 		<link rel="stylesheet" href="./assets/common/style.css" />
 		<script type="module" src="./assets/pages/sandbox02/script.js"></script>
@@ -27,15 +38,14 @@
 			</div>
 
 			<div>
-        <label>サイズ</label>
-        <select id="imageSize">
-          <option value="0">指定なし</option>
-          <option value="1">256x256</option>
-          <option value="2">512x512</option>
-          <option value="3">1024x1024</option>
-        </select>
-
-      </div>
+				<label>サイズ</label>
+				<select id="imageSize">
+					<option value="0">指定なし</option>
+					<option value="1">256x256</option>
+					<option value="2">512x512</option>
+					<option value="3">1024x1024</option>
+				</select>
+			</div>
 
 			<div>
 				<button id="executeButton">Execute</button>
