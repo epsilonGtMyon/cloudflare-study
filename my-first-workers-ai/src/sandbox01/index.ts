@@ -16,6 +16,7 @@ const handleSandbox01: FetchFunc = async (request, env, ctx) => {
   }
 
   const input = await request.json<Partial<AiInput>>();
+  console.log(`Received input: ${input.userInput}}`);
 
   const response = await env.AI.run(modelBasic, {
     messages: [

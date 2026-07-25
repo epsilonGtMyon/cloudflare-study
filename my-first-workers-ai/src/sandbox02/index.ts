@@ -26,6 +26,7 @@ const handleSandbox02: FetchFunc = async (request, env, ctx) => {
 	if (!['0', '1', '2', '3'].includes(input.imageSize ?? '')) {
 		return new Response('Bad Request', { status: 400 });
 	}
+	console.log(`Received input: ${input.userInput}, imageSize: ${input.imageSize}`);
 
 	// 使い方
 	// https://developers.cloudflare.com/changelog/post/2026-01-15-flux-2-klein-4b-workers-ai/
