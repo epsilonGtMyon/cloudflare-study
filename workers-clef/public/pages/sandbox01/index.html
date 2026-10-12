@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox01</title>
+    <script src="./script.js" type="module"></script>
+    <style>
+      .questionArea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sandbox01</h1>
+    <p>"noul" という 質問が正しい可能性を返す方法を検証</p>
+
+    <main>
+      <div>
+        「はい」か「いいえ」で答えることができる質問を入力してね:
+        <div>
+          <textarea
+            id="message"
+            class="questionArea"
+            placeholder="Enter your message here"
+          ></textarea>
+        </div>
+
+        <div>
+          <button id="gen1Button">Generate1</button>
+        </div>
+      </div>
+
+      <hr />
+      <div>
+        <div id="resultMessage"></div>
+      </div>
+    </main>
+  </body>
+</html>

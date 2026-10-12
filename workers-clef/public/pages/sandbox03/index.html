@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox03</title>
+    <script src="./script.js" type="module"></script>
+    <style>
+      .questionArea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sandbox03</h1>
+    <p>"score" という順序がある評価基準を検証。</p>
+
+    <main>
+      <div>
+        <div>
+          モノの名前を入力してください。大きさを回答します。補足説明をつけると精度が上がる。
+          (重要度の振り分けなどに使えるらしい)
+          <textarea
+            id="message"
+            class="questionArea"
+            placeholder="Enter your message here"
+          ></textarea>
+        </div>
+
+        <div>
+          <button id="gen1Button">Generate1</button>
+        </div>
+      </div>
+
+      <hr />
+      <div>
+        <div id="resultMessage" style="white-space: pre-wrap"></div>
+      </div>
+    </main>
+  </body>
+</html>

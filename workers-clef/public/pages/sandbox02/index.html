@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox02</title>
+    <script src="./script.js" type="module"></script>
+    <style>
+      .questionArea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sandbox02</h1>
+    <p>"choice" という選択肢に基づく選択を返す方法を検証</p>
+
+    <main>
+      <div>
+        Webアプリケーションを作る際に実装すべきことを書いてみて(frontend, backend, both, none で返します。):
+        <div>
+          <textarea
+            id="message"
+            class="questionArea"
+            placeholder="Enter your message here"
+          ></textarea>
+        </div>
+
+        <div>
+          <button id="gen1Button">Generate1</button>
+        </div>
+      </div>
+
+      <hr />
+      <div>
+        <div id="resultMessage" style="white-space: pre-wrap"></div>
+      </div>
+    </main>
+  </body>
+</html>
