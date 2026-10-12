@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Sandbox01</title>
+    <script src="./script.js" type="module"></script>
+    <style>
+      .questionArea {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image-Sandbox01</h1>
+    <p>"choice" を使って画像が犬か猫か人間かそれ以外であるかを判定します。</p>
+
+    <main>
+      <div>
+
+        <div>
+          <input type="file" id="imageInput" accept="image/png" />
+          <div id="imagePreview">
+          </div>
+        </div>
+
+        <div>
+          <button id="gen1Button">Generate1</button>
+        </div>
+      </div>
+
+      <hr />
+      <div>
+        <div id="resultMessage" style="white-space: pre-wrap"></div>
+      </div>
+    </main>
+  </body>
+</html>
